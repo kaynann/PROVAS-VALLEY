@@ -1,0 +1,32 @@
+{% load static %}
+{% load bootstrap5 %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultas Agendadas</title>
+  {% bootstrap_css %}
+</head>
+<body>
+  <a href="{% url 'register' %}">Agendar consulta</a>
+  <div class="container">
+    <div class="row">
+      {% for consulta in consultas %}
+      <div class="col"> 
+        <img src="media/{{ consulta.foto_paciente }}" class="img-thumbnail" alt="Foto do paciente" style="width: 300px; height: 300px;">
+        <h3>Nome do paciente: {{ consulta.nome_paciente }}</h3>
+        <h4>Idade: {{ consulta.idade }} anos</h4>
+        <p>Peso: {{ consulta.peso }}Kg</p>
+        <p>Motivo da consulta: {{ consulta.motivo_consulta }}</p>
+        <span>Dia: {{ consulta.dia_consulta }}</span><br>
+        <span>Hora: {{ consulta.hora }}h </span><br>
+        <a class="btn btn-danger" href="{% url 'delete' consulta.id %}">Deletar</a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% bootstrap_javascript %}
+</body>
+</html>
