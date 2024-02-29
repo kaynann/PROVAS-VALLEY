@@ -1,0 +1,7 @@
+Avaliação 29/02.
+
+01. Olá, você foi contratada(o) para desenvolver o sistema de gerenciamento do CleanDrive um lava jato que preza pela pontualidade na entrega dos veículos prontos. Então, faça um ambiente onde seja possível receber o carro/moto e entregá-lo dentro do prazo, avise se o prazo foi cumprido ou não. Lembre que você tem que dar a possibilidade de cadastrar os dados do cliente do lav10.
+
+02. O Churrasco no Palito quer você para fazer o controle dos pedidos dos clientes. Onde é possivel anotar o nome e pedido do cliente e dizer o valor da conta.
+
+Tenha uma ótima avaliação.
