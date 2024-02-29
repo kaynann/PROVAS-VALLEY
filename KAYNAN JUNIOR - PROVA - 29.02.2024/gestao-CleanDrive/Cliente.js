@@ -37,16 +37,16 @@ export class Cliente extends Veiculo {
         this.valorServico -= valorPago;
         console.log(`O cliente pagou R$${ valorPago }, ainda faltam R$${ this.valorServico }`)
         return this.valorServico;
-     } else if(this.valorServico < valorPago) {
+    } else if(this.valorServico < valorPago) {
         console.log(`O cliente pagou R$${ valorPago }, de R$${ this.valorServico } o troco dele é R$${ valorPago -= this.valorServico }`);
         this.valorServico -= this.valorServico;
         return this.valorServico
-  } else if (this.valorServico === valorPago) {
+    } else if (this.valorServico === valorPago) {
         console.log(`O cliente pagou a conta completa.`);
         this.valorServico -= valorPago
         return this.valorServico
-  } else {
+    } else {
       console.log('Não foi possível identificar o pagamento');
-  };
-  }
+    };
+ }
 };
