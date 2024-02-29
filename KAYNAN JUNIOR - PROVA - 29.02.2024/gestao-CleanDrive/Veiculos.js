@@ -92,9 +92,9 @@ export class Veiculo {
 
   validaPrazo() {
     if (this.prazo === true) {
-        console.log('O veículo foi entregue no prazo')
+        console.log('O veículo foi entregue no prazo');
     } else {
-        console.log('O veículo foi entregue fora do prazo')
+        console.log('O veículo foi entregue fora do prazo');
     };
   };
 };
